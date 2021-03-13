@@ -1,0 +1,265 @@
+<!DOCTYPE HTML>
+<html>
+
+<style>
+
+th, td{
+  border: 1px solid black;
+}
+
+#red{
+  color: red;
+}
+
+#orange{
+  color: orange;
+}
+
+#green{
+  color: green;
+}
+
+#blue{
+  color: blue;
+}
+
+#purple{
+  color: purple;
+}
+
+
+#serif{
+  font-family: serif;
+}
+
+#monospace{
+  font-family: monospace;
+}
+
+#helvetica{
+  font-family: 'Helvetica';
+}
+
+h2{
+  border: 6px dotted red;
+
+  /* border-radius: 100%; */
+  background-color: lightblue;
+  margin:0 auto;
+  height: 200px;
+  width: 100px;
+  overflow: visible;
+
+  padding: 10px 20px 30px 40px;
+  display: inline-block;
+  box-shadow: -3px -4px 5px blue;
+}
+
+p{
+  border: 3px solid black;
+}
+
+</style>
+
+
+<head>
+  <title>CC2T Web Dev</title>
+  <h1>Learning HTML</h1>
+  <p>Learning HTML doesn't take long at all, and it’s one of the easier markup languages! Be sure to be looking along at the code for this webpage to better understand HTML and CSS.</p>
+</head>
+<body>
+
+
+
+  <div id="basics">
+    <h2>Basics of HTML are super easy to learn for everyone! </h2>
+    <p>HTML websites are made up of elements. These elements put content into your website, content such as images to text to videos.</p>
+    <h3>Elements</h3>
+    <p>Most elements have an opening/closing tag. The opening tag looks like this <(element name)> and the closing tag looks like this </(element name)>.
+    <h3>Attributes</h3>
+    <p>Attributes go inside elements to specify the element or add features to the tag. For example, you can set a link to an imagine using the href tag. Attributes usually look like <(attribute name)="">.
+    <h3>Preformatted Elements</h3>
+    <p>Some HTML elements that are already built-in are headers (h1, h2, h3, etc.), paragraphs (p), page head (head), the tab title (title), and many more.</p>
+    <h3>Divs</h3>
+    <p>In addition to the preformatted ones, you can also split your content up using dividers, denoted by div. These just section off the website.</p>
+    <h3>Classes & IDs</h3>
+    <p>When using divs, you can use classes and IDs to specify the section of the webpage and provide details. These will also help for CSS!!</p>
+    </div><br>
+
+      Horizontal lines like the one below are useful for splitting up content and are denoted by hr.
+
+      <hr>
+
+      <div class="header">
+        <h1>Headers are denoted by h and then a number. This is h1.</h1>
+        <h2>The headers get smaller and smaller as the numbers get larger. This is h2.</h2>
+        <h3>It's like having subheaders of subheaders. This is h3.</h3>
+        <h4>The headers start at h1. This is h4.</h4>
+        <h5>And they end at h6. This is h5.</h5>
+        <h6>Here's the last preformatted header! This is h6.</h6>
+      </div>
+
+      <hr>
+
+      <div id="media">
+        <h2>Media</h2>
+        <h3>Images</h3>
+        <img src="download.png" alt="Adding an alt attribute to an image helps provide backup text when the image doesn't load.">
+        <h3>Videos</h3>
+        <video src="htmlvid.mp4" controls>Video error - this goes between the tags and will show up when the video doesn’t work.</video>
+      </div>
+
+      <hr>
+
+      <div class="lists">
+        <h2>Lists</h2>
+        <p>There are 2 lists in HTML. Here's the first one:</p>
+        <ul>
+          <li>Unordered lists</li>
+          <li>Bullet points</li>
+          <li>Denoted by ul</li>
+        </ul>
+        <p>And here's the second one:</p>
+        <ol>
+          <li>Ordered lists</li>
+          <li>Numbered</li>
+          <li>Denoted by ol</li>
+          <li>Remember, the order of your items will matter!</li>
+        </ol>
+      </div>
+
+      <hr>
+
+      <div id="tables">
+        <h2>Tables</h2>
+        <table>
+          <th scope="col">Element Name</th>
+          <th scope="col">Use</th>
+          <tr>
+            <td rowspan="2">!DOCTYPE HTML</td>
+            <td>The most important tag, is needed to start every HTML website</td>
+          </tr>
+          <tr>
+            <td>Does not have a closing tag
+            </tr>
+            <tr>
+              <td rowspan="2">html</td>
+              <td>The most basic html element, everything is done within this tag</td>
+            </tr>
+            <tr>
+              <td>Does have a closing tag</td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="form">
+          <h1>Form Basics</h1>
+
+          There are so many types of input methods for forms!
+
+          <form method="post" action="another.html">
+
+            <!-- Username Box -->
+            <label for="username" id="username">This is a username box. Enter your username:</label>
+            <input type="text" name="username">
+
+            <br>
+
+            <!-- Password Box -->
+            <label for="password" id="password">Here's a password box - the characters are hidden! Enter your password:</label>
+            <input type="password" name="password">
+
+            <br>
+
+            <!-- Number -->
+            <label for="rating" id="rating">This is a sliding type input. On a scale of 1 to 10, how much do you understand html?</label>
+            <input type="number" name="rating">
+
+            <br>
+
+            <!-- Range -->
+            <label for="range" id="range">Here you can slide along a range. Do you like html?</label>
+            <br>
+            <span>Not Really</span>
+            <input type="range" name="range">
+            <span>Yes!!</span>
+
+            <br>
+
+            <!-- Checkbox -->
+            <label for="favorite" id="favorite">This is a checkbox - you can select as many as you want! What are your favorite CS Languages?</label>
+            <br>
+            <input type="checkbox" name="favorite" value="Java">Java
+            <br>
+            <input type="checkbox" name="favorite" value="Python">Python
+            <br>
+            <input type="checkbox" name="favorite" value="HTML">HTML
+            <br>
+            <input type="checkbox" name="favorite" value="CSS">CSS
+
+            <br>
+
+            <!-- Radio -->
+            <label for="question" id="question">This is a radio type input. It's like multiple choice; you can only choose one! What input is your favorite?</label>
+            <br>
+            <input type="radio" name="question" value="Checkbox">Checkbox
+            <br>
+            <input type="radio" name="question" value="Number">Number
+            <br>
+            <input type="radio" name="question" value="Radio">Radio
+            <br>
+            <input type="radio" name="question" value="Range">Range
+
+            <br>
+
+            <!-- Select -->
+            <span>Here's a cool selection type input. What is today's date?</span>
+            <br>
+            <select name="date">
+              <option value="Monday">Monday</option>
+              <option value="Tuesday">Tuesday</option>
+              <option value="Wednesday">Wednesday</option>
+              <option value="Thursday">Thursday</option>
+              <option value="Friday">Friday</option>
+              <option value="Saturday">Saturday</option>
+              <option value="Sunday">Sunday</option>
+            </select>
+
+            <br>
+
+            <!-- DataList -->
+            <span>Here's another type of input that's more open-ended. What color is your shirt?</span>
+            <input list="clothes">
+            <br>
+            <datalist id="clothes">
+              <option value="red">
+                <option value="blue">
+                  <option value="black">
+                    <option value="white">
+                    </datalist>
+
+                  </form>
+
+                  <!-- Submit -->
+                  <input type="submit">
+                </div>
+
+                <hr>
+
+                <div class="css">
+
+                  <div id="red">We can change colors with CSS!</div>
+                  <div id="orange"> The CSS content will be stored in a style tag. </div>
+                  <div id="green"> Inside the style tag, you can code the CSS by adding the element name and then opening curly braces!</div>
+                  <div id="blue"> In these curly braces you will place the attributes and what they will be equal to.</div>
+                  <div id="purple"> Before we open the curly braces, you'll either put the element name, or a period and the class name, or a hashtag and the ID name.</div>
+                  <br>
+
+                  <div id="serif"> We can also change the font style with CSS! </div>
+                  <div id="monospace"> Use font-families and font-styles to change what they look like. </div>
+                  <div id="helvetica"> You can use the default fonts, or you can import fonts from Google Fonts! </div>
+
+                </div>
+
+              </body>
+              </html>
